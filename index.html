@@ -7,16 +7,18 @@
     <title>imc.io</title>
 </head>
 <body>
-    <form>
+    <form id="formulario" method="POST">
         <h1>Caucule seu IMC</h1>
-        <label for="user_height">Altura</label><br>
-        <input type="text" id="user_height" autocomplete="off"><br>
+        <label for="altura">Altura</label><br>
+        <input type="text" id="altura" autocomplete="off"><br>
 
-        <label for="user_weight">Peso</label><br>
-        <input type="text" id="user_weight" autocomplete="off"><br>
+        <label for="peso">Peso</label><br>
+        <input type="text" id="peso" autocomplete="off"><br>
                 
-        <button type="submit">Calcular IMC</button>
+        <button type="submit" id="send" >Calcular IMC</button>
         <button type="reset" id="reset_button">Resetar</button>
+
+        <div id="result"></div>
     </form>
 
     <script src="src/js/main.js"></script>
